@@ -5,6 +5,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #000000;
+    height: 100vh;
 }
 
 .editmenu{

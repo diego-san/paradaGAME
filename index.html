@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/anicollection.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        function menu1() {
+
+            $("#conatenido").html('');
+
+            $("#conatenido").append(' <div class="row" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: bounceIn animated; if: animationend, on: .balloon, do: swing ">\n' +
+                '        <div class="col-md-12">\n' +
+                '            <p class="h1 text-center text-white" style="margin-top: 10%; background: rgba(50, 53, 61, 0.16);">New video game developed in scratch</p>\n' +
+                '            <button type="button" class="btn btn-danger bonton-edit " style="margin-top: 20px" >Register now for testing</button>\n' +
+                '        </div>\n' +
+                '\n' +
+                '    </div>');
+
+
+        }
+
+        function menu2() {
+            $("#conatenido").html('');
+            $("#conatenido").append('<div class="row">\n' +
+                '        <div class="col-md-12 block-2-title">\n' +
+                '            <p class="h1 text-center text-white background: rgba(208, 245, 255, 0.04);">\n' +
+                '                <img src="img/download.png" width="40" height="40" class="d-inline-block align-top" alt="">\n' +
+                '                Download Free!</p>\n' +
+                '        </div>\n' +
+                '    </div>\n' +
+                '    <div class="row">\n' +
+                '        <div class="col-md-4 block-2">\n' +
+                '            <a href="#">\n' +
+                '               <img src="img/app-store.png"  class="img-fluid" alt="Responsive image" >\n' +
+                '            </a>\n' +
+                '        </div>\n' +
+                '        <div class="col-md-4 block-2">\n' +
+                '            <a href="#">\n' +
+                '                <img src="img/Android-app.png"  class="img-fluid" alt="Responsive image" >\n' +
+                '            </a>\n' +
+                '        </div>\n' +
+                '        <div class="col-md-4 block-2">\n' +
+                '            <a href="#">\n' +
+                '                <img src="img/windows10.png"  class="img-fluid" alt="Responsive image" >\n' +
+                '            </a>\n' +
+                '        </div>\n' +
+                '    </div>');
+
+        }
+
+        function menu3() {
+
+            $("#conatenido").html('');
+            $("#conatenido").append('');
+
+        }
+    </script>
+
+    <title>Parada game</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-dark editmenu ">
+                <a class="navbar-brand logo-index" href="#">PARADA GAME</a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  justify-content-md-center text-center" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <button class="color-menu" id="boton1" onclick="menu1()" data-anijs="if: click, on: #boton1, do: bounceIn animated, to: #conatenido  ">Home</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="color-menu" id="boton2"  onclick="menu2()" data-anijs="if: click, on: #boton2, do: bounceIn animated, to: #conatenido  ">Download</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="color-menu" href="" >Repository</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div> <!--menu----------->
+</div>
+
+<div class="container"  id="conatenido">
+  <div class="row" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: bounceIn animated; if: animationend, on: .balloon, do: swing ">
+        <div class="col-md-12">
+            <p class="h1 text-center text-success  text-light" style="margin-top: 10%;  background: rgba(50, 53, 61, 0.16);">New video game developed in scratch</p>
+            <button type="button" class="btn btn-danger bonton-edit " style="margin-top: 20px" >Register now for testing</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/anijs-min.js"></script>
+<script src="js/anijs-helper-scrollreveal-min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
